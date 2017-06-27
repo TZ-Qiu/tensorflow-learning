@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+author: qtz
+time: 17-6-27
+"""
+
 from datetime import datetime
 import math
 import time
