@@ -5,7 +5,7 @@ time: 17-6-26
 """
 
 from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("autoencoder/MNIST_data/", one_hot=True)
+mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
 # plot one example
 print(mnist.train.images.shape, mnist.train.labels.shape)     # (55000, 28 * 28)  (55000, 10)

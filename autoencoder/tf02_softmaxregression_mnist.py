@@ -5,7 +5,7 @@ time: 17-6-26
 """
 
 from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("autoencoder/MNIST_data/", one_hot=True)
+mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
 import tensorflow as tf
 
@@ -39,6 +39,8 @@ for i in range(1000):
 # step 4: predict accuracy in test data or validation set
 # validate the model
 correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
+print(correct_prediction)
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+print(accuracy)
 # compute accuracy
 print(accuracy.eval({x:mnist.test.images, y_:mnist.test.labels}))
