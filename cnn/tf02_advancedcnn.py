@@ -4,7 +4,7 @@ author: qtz
 time: 17-6-27
 """
 
-from CNN import cifar10,cifar10_input
+from cnn import cifar10,cifar10_input
 import tensorflow as tf
 import numpy as np
 import time
